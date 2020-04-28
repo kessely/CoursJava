@@ -1,53 +1,46 @@
-puplic abstract class Fihure{
+classe abstraite  publique Figure { 
 
-   //attributs
-          //instance
-              protected double longueur;
-          //classe
-              protected static String unite;
+   // attributs
+          // instance
+             double   longeur protégé ;
+          // Classe
+            protégé  statique  String unite;  
 
-
-   //methodes
-          //instance 
-   //constructeur : est une methode qui porte le meme nom que la classe et n'a pas de type de retour
-   //constructeur par defaut
-
-     public Figure(){
-     
+   // Méthodes
+    // Intances
+     // Constructeur: est une méthode qui porte le meme nom que la classe et n'a pas de type // de retour
+       // Constructeur par défaut
+        Figure publique () {
+      }
+   // Getters et Setters => toujours methodes betons, methodes Intances ou methodes // Classe
+     // Getters et Setters de longueur
+      public  double  getLongeur () {
+          retourner  cela . longueur;
      }
 
+     public  void  setLongeur ( double  longueur ) {
+            ça . longueur = longueur;
+     }
 
-    // getters setters => toujours des methodes concretes, des methodes d'instances ou methodes de class
+  // Getters et Setters de unite
+      public  static  String  getUnite () {
+          retourner unir;
+     }
+
+     public  static  void  setUnite ( String  unite ) {
+            La figure . unir = unir;
+     }
    
+   // metiers
+     public  abstrait  double  demiPerimetre ();    
+      
+     double  périmètre public () {
+         demiPerimetre () * 2 ;
+   }  
 
-     //classe 
-         //getters et setters longueur
-         public double getLongueur(){
-             return this.longueur;
-         }
+    double surface abstraite  publique (); 
+    double diagonale abstraite  publique ();    
 
-         puplic void setLongueur(double longueur){
-             this.longueur=Longueur;
-         }
+      
 
-         //getters et setters de unite
-         public static String  getUnite(){
-             return unite;
-         }
-
-         puplic static void setUnite(String unite){
-             Figure.unite=unite;
-         }
- 
-
-         //metiers
-            puplic abstract double demiPerimetre();
-                
-            public double perimetre(){
-                  demiPeimetre * 2;
-            }
- 
-            public abstract double surface();
-            public abstract 
-
-} 
+}

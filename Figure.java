@@ -1,46 +1,47 @@
-classe abstraite  publique Figure { 
+public abstract class Figure { 
 
    // attributs
           // instance
-             double   longeur protégé ;
+             protected double longueur;
           // Classe
-            protégé  statique  String unite;  
+            protected static String unite;  
 
    // Méthodes
     // Intances
      // Constructeur: est une méthode qui porte le meme nom que la classe et n'a pas de type // de retour
        // Constructeur par défaut
-        Figure publique () {
+        public Figure () {
       }
-   // Getters et Setters => toujours methodes betons, methodes Intances ou methodes // Classe
+
+   // Getters et Setters => toujours méthodes concretes, méthodes Intances ou methodes de classe
      // Getters et Setters de longueur
       public  double  getLongeur () {
-          retourner  cela . longueur;
+          ruturn this.longueur;
      }
 
-     public  void  setLongeur ( double  longueur ) {
-            ça . longueur = longueur;
+     public  void  setLongeur (double  longueur){
+            this.longueur =longueur;
      }
 
   // Getters et Setters de unite
-      public  static  String  getUnite () {
-          retourner unir;
+      public  static  String  getUnite(){
+          retourner unite;
      }
 
-     public  static  void  setUnite ( String  unite ) {
-            La figure . unir = unir;
+     public  static  void  setUnite(String  unite){
+            Figure.unite=unite;
      }
    
    // metiers
-     public  abstrait  double  demiPerimetre ();    
+     public abstract double demiPerimetre();    
       
-     double  périmètre public () {
-         demiPerimetre () * 2 ;
+     public double  périmètre() {
+         demiPerimetre() * 2;
    }  
 
-    double surface abstraite  publique (); 
-    double diagonale abstraite  publique ();    
-
+    public abstract double surface();
+    public abstract double diagonale();
+    
       
 
 }
